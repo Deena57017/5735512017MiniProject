@@ -1,8 +1,9 @@
 import './App.css'
 import React,{Component} from 'react';
 import Header from "./components/Header";
+import Monitor from "./components/monitor/Monitor";
 import Footer from "./components/Footer";
-import ProductItem from "./components/product/ProductItem";
+// import ProductItem from "./components/product/ProductItem";
 
 
 
@@ -14,15 +15,30 @@ class App extends Component{
 
   }
   componentDidMount(){
+    this.setState({products:[
+      {productId:1, productName: "yuja Marmalade lec Cream Honey", unitPrice:"189", thumbnail: "/images/product/1.JPEG"},
+      {productId:2, productName: "yuja Black Coffee", unitPrice:"150", thumbnail: "/images/product/2.JPEG"},
+      {productId:3, productName: "Honey yuja yogurt", unitPrice:"130", thumbnail: "/images/product/3.JPEG"},
+      {productId:4, productName: "Strawberry Milk shake", unitPrice:"175", thumbnail: "/images/product/4.JPEG"},
+      {productId:5, productName: "Strawberry Belgian waffle", unitPrice:"200", thumbnail: "/images/product/5.JPEG"},
+      {productId:6, productName: "Ice Strawberry Ade", unitPrice:"150", thumbnail: "/images/product/6.JPEG"},
+      {productId:7, productName: "Ice Strawberry cafe Latte ", unitPrice:"170", thumbnail: "/images/product/7.JPEG"},
+      {productId:8, productName: "Blooming Strawberry ", unitPrice:"200", thumbnail: "/images/product/8.JPEG"},
+      {productId:9, productName: "Hongsi Smoothie", unitPrice:"160", thumbnail: "/images/product/9.JPEG"},
+      {productId:10, productName: "Roast Chicken", unitPrice:"100", thumbnail: "/images/product/10.JPEG"},
+      {productId:11, productName: "Bing Shoco", unitPrice:"280", thumbnail: "/images/product/11.JPEG"},
+      {productId:12, productName: "Strawberry Chocolate", unitPrice:"155", thumbnail: "/images/product/12.JPEG"},
+      {productId:13, productName: "CAN TUMBLER", unitPrice:"750", thumbnail: "/images/product/13.JPEG"},
+  
+  ]})
 
   }
   render(){
     return(
       <div>
         <Header/>
-        <ProductItem producName="Iphon" unitPrice="45000"/>
-        <ProductItem producName="Iphon 11 " unitPrice="45000"/>
-        <ProductItem producName="Iphon 11 pro" unitPrice="45000"/>
+        <Monitor products={this.state.products}/>
+       
         <Footer company="Deena" email="Deena2038@gmail.com"/>  
 
       </div>

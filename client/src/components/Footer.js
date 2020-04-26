@@ -14,7 +14,7 @@ return(
                 <span className="text-danger">Password By {company}</span> | <span className="text-muted">Contact By Email : {props.email}</span>
                 </samil>
             </div>
-        </div>  //รับ Data มาจาก App.js
+        </div>  
         
         ) 
 

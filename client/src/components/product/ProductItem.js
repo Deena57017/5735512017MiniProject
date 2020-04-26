@@ -1,16 +1,5 @@
 import React, {Component} from "react";
-// const ProductItem = (props)=>{
 
-//     const {producName,unitPrice}=props;
-//     return(
-//         <div>
-//             <p>{producName}</p>
-//             <p>{unitPrice}</p>
-
-//         </div>
-//     )
-
-// }
 class ProductItem extends Component{
     constructor(props){
         super(props);
