@@ -5,7 +5,16 @@ const Footer=(props)=>{
 
     const {company,email}=props;
 return(
-<div>Password By Deena| Contact By Email : {props.email}</div>  //รับ Data มาจาก App.js
+        <div className="container-fluid">
+            <hr/>
+            
+            <div className="text-center title text-uppercase">
+                <samil>
+            
+                <span className="text-danger">Password By {company}</span> | <span className="text-muted">Contact By Email : {props.email}</span>
+                </samil>
+            </div>
+        </div>  //รับ Data มาจาก App.js
         
         ) 
 

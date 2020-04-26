@@ -1,3 +1,4 @@
+import './App.css'
 import React,{Component} from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -7,6 +8,14 @@ import ProductItem from "./components/product/ProductItem";
 
 
 class App extends Component{
+  // constructor(props){
+  //   super(props);
+  //   this.state={produc}
+
+  // }
+  // componentDidMount(){
+
+  // }
   render(){
     return(
       <div>

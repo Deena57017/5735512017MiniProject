@@ -1,0 +1,18 @@
+@font-face{
+    font-family: 'Kanit-Regular';
+    src:url('/fonts/Kanit-Regular.ttf');
+}
+@font-face{
+    font-family: 'Kanit-Medium';
+    src:url('/fonts/Kanit-Medium.ttf');
+}
+@font-face{
+    font-family: 'Kanit-Bold';
+    src:url('/fonts/Kanit-Bold.ttf');
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kanit-Medium';
+}
+.title{
+    font-family: 'Kanit-Regular' ;
+}
