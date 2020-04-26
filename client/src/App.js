@@ -8,14 +8,14 @@ import ProductItem from "./components/product/ProductItem";
 
 
 class App extends Component{
-  // constructor(props){
-  //   super(props);
-  //   this.state={produc}
+  constructor(props){
+    super(props);
+    this.state={produc:""}
 
-  // }
-  // componentDidMount(){
+  }
+  componentDidMount(){
 
-  // }
+  }
   render(){
     return(
       <div>
