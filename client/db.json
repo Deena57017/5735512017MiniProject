@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "productsId": "D001",
+      "productName": "Yuja Marlade Ice Cream",
+      "unitPrice": "189",
+      "thumbnail":"/images/logo/IMG_3775.jpg"
+    },
+    {
+      "productsId": "D002",
+      "productName": "Yuja Black Coffee",
+      "unitPrice": "150",
+      "thumbnail":"/images/logo/IMG_3776.jpg"
+    },
+    {
+      "productsId": "D003",
+      "productName": "Heney Yuja Yogurt",
+      "unitPrice": "130",
+      "thumbnail":"/images/logo/IMG_3777.jpg"
+    },
+    {
+      "productsId": "D004",
+      "productName": "Strawberry Belgian Waffle",
+      "unitPrice": "200",
+      "thumbnail":"/images/logo/IMG_3778.jpg"
+    },
+    {
+      "productsId": "D005",
+      "productName": "Iced Strawberry Cafe Latte",
+      "unitPrice": "200",
+      "thumbnail":"/images/logo/IMG_3779.jpg"
+    },
+    {
+      "productsId": "D006",
+      "productName": "Hongsi Smoothie",
+      "unitPrice": "150",
+      "thumbnail":"/images/logo/IMG_3780.jpg"
+    },
+    {
+      "productsId": "D007",
+      "productName": "Ice Strawberry cafe Latte",
+      "unitPrice": "170",
+      "thumbnail":"/images/logo/IMG_3781.jpg"
+    },
+    {
+      "productsId": "D008",
+      "productName": "Blooming Strawberry",
+      "unitPrice": "200",
+      "thumbnail":"/images/logo/IMG_3782.jpg"
+    },
+    {
+      "productsId": "D009",
+      "productName": "Hongsi Smoothie",
+      "unitPrice": "160",
+      "thumbnail":"/images/logo/IMG_3783.jpg"
+    },
+    {
+      "productsId": "D010",
+      "productName": "Roast Chicken",
+      "unitPrice": "100",
+      "thumbnail":"/images/logo/IMG_3784.jpg"
+    },
+    {
+      "productsId": "D011",
+      "productName": "Bing Shoco",
+      "unitPrice": "200",
+      "thumbnail":"/images/logo/IMG_3785.jpg"
+    },
+    {
+      "productsId": "D012",
+      "productName": "Strawberry Chocolate",
+      "unitPrice": "155",
+      "thumbnail":"/images/logo/IMG_3786.jpg"
+    },
+    {
+      "productsId": "D013",
+      "productName": "CAN TUMBLER",
+      "unitPrice": "750",
+      "thumbnail":"/images/logo/IMG_3787.jpg"
+    }
+    
+  ],
+  "orders":[]
+}
+
