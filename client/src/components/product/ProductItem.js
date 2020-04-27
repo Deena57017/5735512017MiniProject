@@ -6,16 +6,21 @@ class ProductItem extends Component{
         super(props);
         
     }
+   
+    
     render(){
-        const style = {height:300, marginTop:10};
+        const style = {height:300, marginTop:20};
         
-        const {productName,unitPrice,thumbnail}=this.props;
+        const {productName,unitPrice,thumbnail}=this.props.product;
         return(
-            <div className="col-md3 col-sm-6">
+            <div className="col-md6 col-sm-3">
                 <img className="img-fluid img-thumbnail" style={style} src={thumbnail}/> 
                 <h5 className="mt-2">{productName}</h5>
-                <p className="title text-right">{unitPrice}</p>
-                <button className="btn btn-md btn-warning">ซื้อ</button>
+                <p className="title text-right">{unitPrice} THB</p>
+                <button className="btn btn-block btn-warning title" onclick={()=>this.props.onAddOrder(this.props.product)}>
+                ซื้อ
+                </button>
+                
     
             </div>
         )
@@ -23,6 +28,7 @@ class ProductItem extends Component{
     }
 }
 export default ProductItem;
+
 
 
 
