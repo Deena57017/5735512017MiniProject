@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 import Header from "./components/Header";
 import Monitor from "./components/monitor/Monitor";
 import Footer from "./components/Footer";
-// import ProductItem from "./components/product/ProductItem";
+import ProductItem from "./components/product/ProductItem";
 
 
 
@@ -11,24 +11,24 @@ import Footer from "./components/Footer";
 class App extends Component{
   constructor(props){
     super(props);
-    this.state={produc:""}
+    this.state={products:""};
 
   }
   componentDidMount(){
     this.setState({products:[
-      {productId:1, productName: "สลัดผัก", unitPrice:"189", thumbnail: "/images/product/1.png"},
-      {productId:2, productName: "ไก่ทอด", unitPrice:"150", thumbnail: "/images/product/2.png"},
-      {productId:3, productName: "บิงซู", unitPrice:"130", thumbnail: "/images/product/3.png"},
-      {productId:4, productName: "เฟรนฟราย", unitPrice:"175", thumbnail: "/images/product/4.png"},
-      {productId:5, productName: "เค้ก 3 ชิ้น ", unitPrice:"200", thumbnail: "/images/product/5.png"},
-      {productId:6, productName: "กาแฟ", unitPrice:"150", thumbnail: "/images/product/6.png"},
-      // {productId:7, productName: "Ice Strawberry cafe Latte ", unitPrice:"170", thumbnail: "/images/product/7.png"},
-      // {productId:8, productName: "Blooming Strawberry ", unitPrice:"200", thumbnail: "/images/product/8.png"},
-      // {productId:9, productName: "Hongsi Smoothie", unitPrice:"160", thumbnail: "/images/product/9.png"},
-      // {productId:10, productName: "Roast Chicken", unitPrice:"100", thumbnail: "/images/product/10.png"},
-      // {productId:11, productName: "Bing Shoco", unitPrice:"280", thumbnail: "/images/product/11.png"},
-      // {productId:12, productName: "Strawberry Chocolate", unitPrice:"155", thumbnail: "/images/product/12.png"},
-      // {productId:13, productName: "CAN TUMBLER", unitPrice:"750", thumbnail: "/images/product/13.png"},
+      {productId:1, productName:"Yuja Marlade Ice Cream", unitPrice:"189 THB", thumbnail:"/images/logo/IMG_3775.jpg"},
+      {productId:2, productName: "Yuja Black Coffee", unitPrice:"150 THB", thumbnail:"/images/logo/IMG_3776.jpg"},
+      {productId:3, productName: "Heney Yuja Yogurt", unitPrice:"130 THB", thumbnail:"/images/logo/IMG_3777.jpg"},
+      {productId:4, productName: "Strawberry Belgian Waffle", unitPrice:" 200 THB", thumbnail:"/images/logo/IMG_3778.jpg"},
+      {productId:5, productName: "Iced Strawberry Cafe Latte", unitPrice:"200 THB", thumbnail:"/images/logo/IMG_3779.jpg"},
+      {productId:6, productName: "Hongsi Smoothie", unitPrice:"150 THB", thumbnail:"/images/logo/IMG_3780.jpg"},
+      {productId:7, productName: "Ice Strawberry cafe Latte ", unitPrice:"170 THB", thumbnail:"/images/logo/IMG_3781.jpg"},
+      {productId:8, productName: "Blooming Strawberry ", unitPrice:"200 THB", thumbnail:"/images/logo/IMG_3782.jpg"},
+      {productId:9, productName: "Hongsi Smoothie", unitPrice:"160 THB", thumbnail: "/images/logo/IMG_3783.jpg"},
+      {productId:10, productName: "Roast Chicken", unitPrice:"100 THB", thumbnail: "/images/logo/IMG_3784.jpg"},
+      {productId:11, productName: "Bing Shoco", unitPrice:"280 THB", thumbnail: "/images/logo/IMG_3785.jpg"},
+      {productId:12, productName: "Strawberry Chocolate", unitPrice:"155 THB", thumbnail: "/images/logo/IMG_3786.jpg"},
+      // {productId:13, productName: "CAN TUMBLER", unitPrice:"750", thumbnail: "/images/logo/IMG_3787.jpg"},
   
   ]})
 
