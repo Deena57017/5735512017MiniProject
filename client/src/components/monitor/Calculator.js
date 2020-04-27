@@ -13,7 +13,7 @@ class Calculator extends Component{
                 return(
                 <li className="text-rigth text-dark title">
                     {order.product.productName} x {order.quantity} = {order.product.unitPrice * order.quantity}
-                <button className="btn btn-light btn-sm">X</button>
+                <button className="btn btn-light btn-sm" onClick={()=>this.props.onDelOrder(order.product)}>X</button>
                 </li>
                 )
             })
