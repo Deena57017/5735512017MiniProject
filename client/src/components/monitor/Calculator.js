@@ -12,7 +12,7 @@ class Calculator extends Component{
             return orders.map(order=>{
                 return(
                 <li className="text-rigth text-dark title">
-                    {order.product.productName} x {order.quantity} = {order.product.unitPri * order.quantity}
+                    {order.product.productName} x {order.quantity} = {order.product.unitPrice * order.quantity}
                 <button className="btn btn-light btn-sm">X</button>
                 </li>
                 )
