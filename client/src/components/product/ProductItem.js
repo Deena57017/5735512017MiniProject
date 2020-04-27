@@ -17,7 +17,7 @@ class ProductItem extends Component{
                 <img className="img-fluid img-thumbnail" style={style} src={thumbnail}/> 
                 <h5 className="mt-2">{productName}</h5>
                 <p className="title text-right">{unitPrice} THB</p>
-                <button className="btn btn-block btn-warning title" onclick={()=>this.props.onAddOrder(this.props.product)}>
+                <button className="btn btn-block btn-warning title" onClick={()=>this.props.onAddOrder(this.props.product)}>
                 ซื้อ
                 </button>
                 
