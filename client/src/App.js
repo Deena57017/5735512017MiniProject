@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 import Header from "./components/Header";
 import Monitor from "./components/monitor/Monitor";
 import Footer from "./components/Footer";
-import ProductItem from "./components/product/ProductItem";
+import axios from "axios";
 
 
 
@@ -15,6 +15,7 @@ class App extends Component{
 
   }
   componentDidMount(){
+    //**1
     // this.setState({products:[
       // {productId:1, productName:"Yuja Marlade Ice Cream", unitPrice:"189", thumbnail:"/images/logo/IMG_3775.jpg"},
       // {productId:2, productName: "Yuja Black Coffee", unitPrice:"150", thumbnail:"/images/logo/IMG_3776.jpg"},
@@ -31,9 +32,18 @@ class App extends Component{
       // {productId:13, productName: "CAN TUMBLER", unitPrice:"750", thumbnail: "/images/logo/IMG_3787.jpg"},
   
   // ]})
-  fetch("http://localhost:3333/products",{ method: "GET" })
-    .then(res=>res.json())
-    .then(res=>{this.setState({products: res})})
+  // **2
+  // fetch("http://localhost:3333/products",{ method: "GET" })
+  //   .then(res=>res.json())
+  //   .then(res=>{this.setState({products: res})})
+
+  // **3
+  axios.get("http://localhost:3333/products").then(res=>{
+    {this.setState({products:res.data})}
+  });
+
+
+
   }
   render(){
     return(
