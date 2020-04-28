@@ -15,7 +15,7 @@ class App extends Component{
 
   }
   componentDidMount(){
-    this.setState({products:[
+    // this.setState({products:[
       // {productId:1, productName:"Yuja Marlade Ice Cream", unitPrice:"189", thumbnail:"/images/logo/IMG_3775.jpg"},
       // {productId:2, productName: "Yuja Black Coffee", unitPrice:"150", thumbnail:"/images/logo/IMG_3776.jpg"},
       // {productId:3, productName: "Heney Yuja Yogurt", unitPrice:"130", thumbnail:"/images/logo/IMG_3777.jpg"},
@@ -30,8 +30,10 @@ class App extends Component{
       // {productId:12, productName: "Strawberry Chocolate", unitPrice:"155", thumbnail: "/images/logo/IMG_3786.jpg"},
       // {productId:13, productName: "CAN TUMBLER", unitPrice:"750", thumbnail: "/images/logo/IMG_3787.jpg"},
   
-  ]})
-
+  // ]})
+  fetch("http://localhost:3333/products",{ method: "GET" })
+    .then(res=>res.json())
+    .then(res=>{this.setState({products: res})})
   }
   render(){
     return(
