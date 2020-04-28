@@ -37,12 +37,13 @@ class Product extends Component{
 
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-11">
                             <h1>สินค้า</h1>
+                         
 
                         </div>
-                        <div className="col 1">
-                            <button className="btn btn-dark title float-rigth">เพิ่ม</button>
+                        <div className="col-md-1">
+                           <button className="btn btn-warning title float-rigth">เพิ่ม</button>
 
                             </div>
                         </div>
