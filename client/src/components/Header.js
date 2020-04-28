@@ -33,8 +33,20 @@ class Header extends Component{
                         <hr/>
                     </div>
                     <div className="col-md-1 text-rigth">
-                        <h5 className="text-muted mt-4">{this.state.date.toLocaleTimeString()}</h5> 
+                        <h5 className="text-muted mt-4">
+                            {this.state.date.toLocaleTimeString()}</h5> 
                     </div>
+                    <ul className="list-inline">
+                        <li className="list-inline-item title"><a href="/">หน้าหลัก</a></li>
+                        <li className="list-inline-item title">|</li>
+                        <li className="list-inline-item title"><a href="/orders">รายการสั่งซื้อ</a></li>
+                        <li className="list-inline-item title">|</li>
+                        <li className="list-inline-item title"><a href="/products">สินค้า</a></li>
+                        <li className="list-inline-item title">|</li>
+                        <li className="list-inline-item title"><a href="/about">เกียวกับเรา</a></li>
+                        
+
+                    </ul>
 
                 </div>
                 

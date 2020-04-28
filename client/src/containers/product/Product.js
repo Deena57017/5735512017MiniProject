@@ -41,8 +41,8 @@ class Product extends Component{
                             <h1>สินค้า</h1>
 
                         </div>
-                        <div className="col-6">
-                            <button className="btn btn-success title float-rigth">เพิ่ม</button>
+                        <div className="col 1">
+                            <button className="btn btn-dark title float-rigth">เพิ่ม</button>
 
                             </div>
                         </div>
