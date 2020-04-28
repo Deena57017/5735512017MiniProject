@@ -37,7 +37,7 @@ class App extends Component{
   //   .then(res=>res.json())
   //   .then(res=>{this.setState({products: res})})
 
-  // **3
+  //ใช้วิธีที่ 3 **3
   axios.get("http://localhost:3333/products").then(res=>{
     {this.setState({products:res.data})}
   });
@@ -51,7 +51,7 @@ class App extends Component{
         <Header/>
         <Monitor products={this.state.products}/>
        
-        <Footer company="Deena" email="Deena2038@gmail.com"/>  
+        <Footer company="Smilodon" email="Deena2038@gmail.com"/>  
 
       </div>
     );
