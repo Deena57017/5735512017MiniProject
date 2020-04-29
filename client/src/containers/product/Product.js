@@ -38,17 +38,14 @@ class Product extends Component{
                     <div className="row">
                         <div className="col-11">
                             <h1>สินค้า</h1>
-                         
-
                         </div>
-                        <div className="col-md-1">
-                           <button className="btn btn-warning title float-rigth">เพิ่ม</button>
-
-                            </div>
-                        </div>
-                        <ProductList products={this.state.products}
-                            onDelProduct={this.delProduct}
-                            />
+                        {/* <div className="col-md-1">
+                            <a href="/product/add"><button className="btn btn-warning title float-rigth">เพิ่ม</button></a>
+                        </div> */}
+                    </div>
+                    <ProductList products={this.state.products}
+                        onDelProduct={this.delProduct}
+                    />
                 </div>
                 <Footer/>
             </div>

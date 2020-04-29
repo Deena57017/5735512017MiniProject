@@ -1,42 +1,6 @@
 {
   "products": [
     {
-      "id": "D001",
-      "productName": "Yuja Marlade Ice Cream",
-      "unitPrice": "189",
-      "thumbnail": "/images/logo/IMG_3775.jpg"
-    },
-    {
-      "id": "D002",
-      "productName": "Yuja Black Coffee",
-      "unitPrice": "150",
-      "thumbnail": "/images/logo/IMG_3776.jpg"
-    },
-    {
-      "id": "D003",
-      "productName": "Heney Yuja Yogurt",
-      "unitPrice": "130",
-      "thumbnail": "/images/logo/IMG_3777.jpg"
-    },
-    {
-      "id": "D004",
-      "productName": "Strawberry Belgian Waffle",
-      "unitPrice": "200",
-      "thumbnail": "/images/logo/IMG_3778.jpg"
-    },
-    {
-      "id": "D005",
-      "productName": "Iced Strawberry Cafe Latte",
-      "unitPrice": "200",
-      "thumbnail": "/images/logo/IMG_3779.jpg"
-    },
-    {
-      "id": "D006",
-      "productName": "Hongsi Smoothie",
-      "unitPrice": "150",
-      "thumbnail": "/images/logo/IMG_3780.jpg"
-    },
-    {
       "id": "D007",
       "productName": "Ice Strawberry cafe Latte",
       "unitPrice": "170",
@@ -80,22 +44,31 @@
     },
     {
       "id": "D014",
-      "productName": "TEST",
+      "productName": "Strawberry Chocolate",
       "unitPrice": "189",
       "thumbnail": "/images/logo/IMG_3775.jpg"
     }
   ],
   "orders": [
     {
-      "orderedDate": "2020-04-28T06:49:31.465Z",
-      "totalPrice": 150,
+      "orderedDate": "2020-04-29T12:17:29.027Z",
+      "totalPrice": 330,
       "orders": [
         {
           "product": {
-            "productsId": "D002",
-            "productName": "Yuja Black Coffee",
-            "unitPrice": "150",
-            "thumbnail": "/images/logo/IMG_3776.jpg"
+            "id": "D003",
+            "productName": "Heney Yuja Yogurt",
+            "unitPrice": "130",
+            "thumbnail": "/images/logo/IMG_3777.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "D005",
+            "productName": "Iced Strawberry Cafe Latte",
+            "unitPrice": "200",
+            "thumbnail": "/images/logo/IMG_3779.jpg"
           },
           "quantity": 1
         }
@@ -103,15 +76,24 @@
       "id": 1
     },
     {
-      "orderedDate": "2020-04-28T06:59:08.279Z",
-      "totalPrice": 189,
+      "orderedDate": "2020-04-29T13:47:05.458Z",
+      "totalPrice": 260,
       "orders": [
         {
           "product": {
-            "productsId": "D001",
-            "productName": "Yuja Marlade Ice Cream",
-            "unitPrice": "189",
-            "thumbnail": "/images/logo/IMG_3775.jpg"
+            "id": "D010",
+            "productName": "Roast Chicken",
+            "unitPrice": "100",
+            "thumbnail": "/images/logo/IMG_3784.jpg"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "D009",
+            "productName": "Hongsi Smoothie",
+            "unitPrice": "160",
+            "thumbnail": "/images/logo/IMG_3783.jpg"
           },
           "quantity": 1
         }
@@ -119,205 +101,29 @@
       "id": 2
     },
     {
-      "orderedDate": "2020-04-28T07:00:09.171Z",
-      "totalPrice": 150,
+      "orderedDate": "2020-04-29T15:20:12.464Z",
+      "totalPrice": 260,
       "orders": [
         {
           "product": {
-            "productsId": "D002",
-            "productName": "Yuja Black Coffee",
-            "unitPrice": "150",
-            "thumbnail": "/images/logo/IMG_3776.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 3
-    },
-    {
-      "orderedDate": "2020-04-28T07:01:53.965Z",
-      "totalPrice": 130,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D003",
-            "productName": "Heney Yuja Yogurt",
-            "unitPrice": "130",
-            "thumbnail": "/images/logo/IMG_3777.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 4
-    },
-    {
-      "orderedDate": "2020-04-28T07:10:56.758Z",
-      "totalPrice": 130,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D003",
-            "productName": "Heney Yuja Yogurt",
-            "unitPrice": "130",
-            "thumbnail": "/images/logo/IMG_3777.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 5
-    },
-    {
-      "orderedDate": "2020-04-28T07:14:06.088Z",
-      "totalPrice": 150,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D002",
-            "productName": "Yuja Black Coffee",
-            "unitPrice": "150",
-            "thumbnail": "/images/logo/IMG_3776.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 6
-    },
-    {
-      "orderedDate": "2020-04-28T07:15:30.106Z",
-      "totalPrice": 150,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D002",
-            "productName": "Yuja Black Coffee",
-            "unitPrice": "150",
-            "thumbnail": "/images/logo/IMG_3776.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 7
-    },
-    {
-      "orderedDate": "2020-04-28T07:19:21.672Z",
-      "totalPrice": 330,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D003",
-            "productName": "Heney Yuja Yogurt",
-            "unitPrice": "130",
-            "thumbnail": "/images/logo/IMG_3777.jpg"
-          },
-          "quantity": 2
-        }
-      ],
-      "id": 8
-    },
-    {
-      "orderedDate": "2020-04-28T08:24:58.922Z",
-      "totalPrice": 300,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D002",
-            "productName": "Yuja Black Coffee",
-            "unitPrice": "150",
-            "thumbnail": "/images/logo/IMG_3776.jpg"
-          },
-          "quantity": 2
-        }
-      ],
-      "id": 9
-    },
-    {
-      "orderedDate": "2020-04-28T13:06:59.918Z",
-      "totalPrice": 150,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D002",
-            "productName": "Yuja Black Coffee",
-            "unitPrice": "150",
-            "thumbnail": "/images/logo/IMG_3776.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 10
-    },
-    {
-      "orderedDate": "2020-04-28T13:07:55.461Z",
-      "totalPrice": 390,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D003",
-            "productName": "Heney Yuja Yogurt",
-            "unitPrice": "130",
-            "thumbnail": "/images/logo/IMG_3777.jpg"
-          },
-          "quantity": 3
-        }
-      ],
-      "id": 11
-    },
-    {
-      "orderedDate": "2020-04-28T13:19:38.949Z",
-      "totalPrice": 200,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D004",
-            "productName": "Strawberry Belgian Waffle",
-            "unitPrice": "200",
-            "thumbnail": "/images/logo/IMG_3778.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 12
-    },
-    {
-      "orderedDate": "2020-04-28T13:19:46.447Z",
-      "totalPrice": 200,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D004",
-            "productName": "Strawberry Belgian Waffle",
-            "unitPrice": "200",
-            "thumbnail": "/images/logo/IMG_3778.jpg"
-          },
-          "quantity": 1
-        }
-      ],
-      "id": 13
-    },
-    {
-      "orderedDate": "2020-04-29T09:28:56.176Z",
-      "totalPrice": 330,
-      "orders": [
-        {
-          "product": {
-            "productsId": "D004",
-            "productName": "Strawberry Belgian Waffle",
-            "unitPrice": "200",
-            "thumbnail": "/images/logo/IMG_3778.jpg"
+            "id": "D010",
+            "productName": "Roast Chicken",
+            "unitPrice": "100",
+            "thumbnail": "/images/logo/IMG_3784.jpg"
           },
           "quantity": 1
         },
         {
           "product": {
-            "productsId": "D003",
-            "productName": "Heney Yuja Yogurt",
-            "unitPrice": "130",
-            "thumbnail": "/images/logo/IMG_3777.jpg"
+            "id": "D009",
+            "productName": "Hongsi Smoothie",
+            "unitPrice": "160",
+            "thumbnail": "/images/logo/IMG_3783.jpg"
           },
           "quantity": 1
         }
       ],
-      "id": 14
+      "id": 3
     }
   ]
 }

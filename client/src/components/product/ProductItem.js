@@ -23,14 +23,14 @@ class ProductItem extends Component{
                 </button>
                 }
 
-                {(this.props.onDelProduct || this.props.onEditProduct) &&
+                {/* {(this.props.onDelProduct || this.props.onEditProduct) &&
                 <button className="btn btn-primary col-5 title">
                 แก้ไข
                 </button>
-                }
+                } */}
                 
                 {(this.props.onDelProduct || this.props.onEditProduct) &&
-                <button className="btn btn-danger col-5 float-right title" onClick={()=>this.props.onDelProduct(this.props.product)}>
+                <button className="btn btn-block btn-danger col-5 float-right title" onClick={()=>this.props.onDelProduct(this.props.product)}>
                 ลบ
                 </button>
                  }
