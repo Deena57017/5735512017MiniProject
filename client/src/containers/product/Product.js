@@ -16,14 +16,13 @@ class Product extends Component{
         })
     }
     delProduct(product){
-        axios.delete("http://localhost:3001/products/"+product.id).then(res=>{
-        axios.get("http://localhost:3001/products/").then(
-            res=>{
-                this.setState({products:res.data});
-            }
-        )
-    })
-}
+        axios.delete(`http://localhost:3000/products/${product.id}`).then(res=>{
+            const filterProductList = this.state.products.filter(function(item) {
+                return item.id !== product.id;
+            });
+            this.setState({products: filterProductList});
+        })
+    }
 
     
     render()
