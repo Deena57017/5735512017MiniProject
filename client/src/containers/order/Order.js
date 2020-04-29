@@ -9,7 +9,7 @@ class Order extends Component{
         this.state={orders:null};
     }
     componentDidMount(){
-        axios.get("http://localhost:3001/orders").then(
+        axios.get("http://localhost:3000/Orders").then(
             res=>{
                 this.setState({orders:res.data});
             }
@@ -17,8 +17,8 @@ class Order extends Component{
 
     }
     delOrder(order){
-        axios.delete("http://localhost:3001/orders/"+order.id).then(res=>{
-            axios.get("http://localhost:3001/orders/").then(
+        axios.delete("http://localhost:3000/Orders/"+order.id).then(res=>{
+            axios.get("http://localhost:3000/Orders/").then(
                 res=>{
                     this.setState({orders:res.data});
                 }
@@ -29,15 +29,15 @@ class Order extends Component{
         return this.state.orders && this.state.orders.map(order=>{
             const date = new Date(order.orderedDate);
             return(
-                <div key={order.id}className="col-md-3">
+                <div key={order.id} className="col-md-3">
                     <hr/>
-                    <p className="col-md-3">
-                        <button className="btn btn-danger btn-sm title" onClick={()=>this.delOrder(order)}>X</button>
-                    </p>
+                        <p className="col-md-3">
+                            <button className="btn btn-danger btn-sm title" onClick={()=>this.delOrder(order)}>X</button>
+                        </p>
                          <h5>วันที่{date.toLocaleDateString()} {date.toLocaleTimeString()}</h5>
                          <ul>
                              {order.orders && order.orders.map(record=>{
-                                 return (<li key={order.product.id}>
+                                 return (<li key={record.productsId}>
                                      {record.product.productName}x{record.quantity}={record.product.unitPrice * record.quantity}
                                      </li>)
                              })}

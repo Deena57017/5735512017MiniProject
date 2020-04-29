@@ -15,7 +15,8 @@ class Monitor extends Component {
     }
 
     addOrder(product) {
-        let findOrder = this.state.orders.find(order => order.product.productId == product.productId);
+        let findOrder = this.state.orders.find(order => order.product.productsId === product.productsId);
+
         if(findOrder) {
             findOrder.quantity++;
         } else {
@@ -26,8 +27,8 @@ class Monitor extends Component {
     }
 
     delOrder(product) {
-        let findOrder = this.state.orders.find(order => order.product.productId == product.productId);
-        let resultOrder = this.state.orders.filter(order => order.product.productId != product.productId);
+        let findOrder = this.state.orders.find(order => order.product.productId === product.productId);
+        let resultOrder = this.state.orders.filter(order => order.product.productId !== product.productId);
         const totalPrice = this.state.totalPrice - (findOrder.quantity * parseInt(findOrder.product.unitPrice));
         this.setState({totalPrice: totalPrice, orders: resultOrder, confirm : false});
     }
@@ -35,7 +36,7 @@ class Monitor extends Component {
     confirmOrder() {
         const {totalPrice, orders} = this.state;
         if(orders && orders.length > 0) {
-            axios.post("http://localhost:3333/orders", {orderedDate: new Date(), totalPrice, orders})
+            axios.post("http://localhost:3000/orders", {orderedDate: new Date(), totalPrice, orders})
                 .then(res => {
                     this.setState({totalPrice: 0, orders: [], confirm : true, msg: 'บันทึกรายการสั่งซื้อเรียบร้อยค่ะ'});
                 });
